@@ -10,8 +10,14 @@ Casadi,cmake,python及相关库<br>
 
 项目下载：**git clone https://github.com/JingyanXing/MPC_TrajectoryPlanning.git && cd MPC_TrajectoryPlanning** <br>
 在项目MPC_TrajectoryPlanning目录下<br>
-cd build && cmake .. && make<br>
+cd build && cmake .. && cmake --build .<br>
 测试是否安装成功：**./main**<br>
+debug 模式: 
+CMakeLists.txt 中打开 set(CMAKE_BUILD_TYPE Debug)  # 生成调试信息
+build文件夹下执行:
+cmake ..
+cmake -DCMAKE_BUILD_TYPE=Debug ..
+make
 
 项目main文件中内置两个测试：<br>
 ```c++

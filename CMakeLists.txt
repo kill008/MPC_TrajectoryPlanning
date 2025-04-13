@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10)
 project(MPC_trajectory)
 # 在 project() 之后添加
-# set(CMAKE_BUILD_TYPE Debug)  # 生成调试信息
+set(CMAKE_BUILD_TYPE Debug)  # 生成调试信息
 # 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 17)
 
