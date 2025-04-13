@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug MPC Program",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/main",  // 你的可执行文件路径
+        "args": [],                                 // 运行时参数（如有）
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}",
+        "environment": [
+          {
+            "name": "DYLD_LIBRARY_PATH",           // macOS 专用
+            "value": "/opt/anaconda3/lib"          // 指向 Conda 库路径
+          }
+        ],
+        "externalConsole": false,
+        "MIMode": "lldb",                          // macOS 使用 lldb
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing",
+            "text": "plugin load lldb",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }
