@@ -12,7 +12,7 @@ Casadi,cmake,python及相关库<br>
 在项目MPC_TrajectoryPlanning目录下<br>
 cd build && cmake .. && make<br>
 测试是否安装成功：**./main**<br>
-建议屏蔽main.cc中第19行代码，使用默认的横向模型（2025.04.15）
+建议屏蔽main.cc中第19行代码，使用默认的横向模型（2025.04.15）<br>
 
 项目main文件中内置两个测试：<br>
 ```c++
