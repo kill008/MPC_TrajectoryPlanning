@@ -12,6 +12,7 @@ Casadi,cmake,python及相关库<br>
 在项目MPC_TrajectoryPlanning目录下<br>
 cd build && cmake .. && cmake --build .<br>
 测试是否安装成功：**./main**<br>
+建议屏蔽main.cc中第19行代码，使用默认的横向模型（2025.04.15）<br>
 debug 模式: 
 CMakeLists.txt 中打开 set(CMAKE_BUILD_TYPE Debug)  # 生成调试信息
 build文件夹下执行:
